@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Education Demographics Survey</h1>
+    <p id="description">This survey asks parents to provide basic demographics information on themselves and their children. There’s no better way to get to know your students than to understand where they come from. Created by the Harvard Graduate School of Education.</p>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input id="name"  class="important" type="text" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input id="email"  class="important" type="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="number">Age</label>
+            <input id="number" class="important" type="number" min="18" max="60" placeholder="Age" required>
+        </div>
+        
+        
+        <div class="form-group">
+            <p>What is your gender?</p>
+            <label>
+                <input name="something" value="female" class="input-radio" type="radio">
+                female
+            </label>
+            <label>
+                <input name="something" value="male" class="input-radio" type="radio">
+                male
+            </label>
+        </div>
+        <div class="form-group">
+            <p>What is your child's gender?</p>
+            <label>
+                <input name="gender" value="female" class="input-radio" type="radio">
+                female
+            </label>
+            <label>
+                <input name="gender" value="male" class="input-radio" type="radio">
+                male
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <p>Which race/ethnicity best describes you?</p>
+            <select name="race" id="dropdown" class="form-control" required>
+                <option disabled selected value>Select</option>
+                <option value="">American Indian or Alaskan Native</option>
+                <option value="">Asian/Pacific Islander</option>
+                <option value="">Black or African American</option>
+                <option value="">Hispanic American</option>
+                <option value="">White/Caucasian</option>
+                <option value="">Multiple Ethnicity / Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Please describe your race/ethnicity.</p>
+            <input type="text" class="input-text">
+        </div>
+        <div class="form-group">
+            <p>What grade is your child in?</p>
+            <input type="number" class="input-number">
+        </div>
+        <div class="form-group">
+            <p>What is your relationship to your child?</p>
+            <select name="race" id="dropdown" class="form-control" required>
+                <option disabled selected value>Select</option>
+                <option value="">mother</option>
+                <option value="">father</option>
+                <option value="">step-mother</option>
+                <option value="">step-father</option>
+                <option value="">grandmother</option>
+                <option value="">grandfather</option>
+                <option value="">aunt</option>
+                <option value="">uncle</option>
+                <option value="">guardian</option>
+                <option value="">other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Please describe your relationship to your child.</p>
+            <input type="text" class="input-text">
+        </div>
+        <div class="form-group">
+            <p>Which race/ethnicity best describes your child?</p>
+            <select name="race" id="dropdown" class="form-control" required>
+                <option disabled selected value>Select</option>
+                <option value="">American Indian or Alaskan Native</option>
+                <option value="">Asian/Pacific Islander</option>
+                <option value="">Black or African American</option>
+                <option value="">Hispanic American</option>
+                <option value="">White/Caucasian</option>
+                <option value="">Multiple Ethnicity / Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Please describe your child's race/ethnicity.</p>
+            <input type="text" class="input-text">
+        </div>
+        <div class="form-group">
+            <p>What year were you born?</p>
+            <input type="number" class="input-number">
+        </div>
+        <div class="form-group">
+            <p>What was the language spoken in your childhood home?</p>
+            <span class="clue">(Check all that apply)</span>
+            <label>
+                <input name="language" value="english" class="input-checkbox" type="checkbox">
+                English
+            </label>
+            <label>
+                <input name="prefer" value="chinese" class="input-checkbox" type="checkbox">
+                Chinese
+            </label>
+            <label>
+                <input name="prefer" value="french" class="input-checkbox" type="checkbox">
+                French
+            </label>
+            <label>
+                <input name="prefer" value="german" class="input-checkbox" type="checkbox">
+                German
+            </label>
+            <label>
+                <input name="prefer" value="italian" class="input-checkbox" type="checkbox">
+                Italian
+            </label>
+            <label>
+                <input name="prefer" value="korean" class="input-checkbox" type="checkbox">
+                Korean
+            </label>
+            <label>
+                <input name="prefer" value="russian" class="input-checkbox" type="checkbox">
+                Russian
+            </label>
+            <label>
+                <input name="prefer" value="spanish" class="input-checkbox" type="checkbox">
+                Spanish
+            </label>
+            <label>
+                <input name="prefer" value="tagalog" class="input-checkbox" type="checkbox">
+                Tagalog
+            </label>
+            <label>
+                <input name="prefer" value="vietnamese" class="input-checkbox" type="checkbox">
+                Vietnamese
+            </label>
+            <label>
+                <input name="prefer" value="other" class="input-checkbox" type="checkbox">
+                Other
+            </label>
+        </div>
+        <div class="form-group">
+            <p>Please describe what language was spoken in your childhood home.</p>
+            <input type="text" class="input-text">
+        </div>
+        <div class="form-group">
+            <p>What is the language you speak with your child currently?</p>
+            <span class="clue">(Check all that apply)</span>
+            <label>
+                <input name="language" value="english" class="input-checkbox" type="checkbox">
+                English
+            </label>
+            <label>
+                <input name="prefer" value="chinese" class="input-checkbox" type="checkbox">
+                Chinese
+            </label>
+            <label>
+                <input name="prefer" value="french" class="input-checkbox" type="checkbox">
+                French
+            </label>
+            <label>
+                <input name="prefer" value="german" class="input-checkbox" type="checkbox">
+                German
+            </label>
+            <label>
+                <input name="prefer" value="italian" class="input-checkbox" type="checkbox">
+                Italian
+            </label>
+            <label>
+                <input name="prefer" value="korean" class="input-checkbox" type="checkbox">
+                Korean
+            </label>
+            <label>
+                <input name="prefer" value="russian" class="input-checkbox" type="checkbox">
+                Russian
+            </label>
+            <label>
+                <input name="prefer" value="spanish" class="input-checkbox" type="checkbox">
+                Spanish
+            </label>
+            <label>
+                <input name="prefer" value="tagalog" class="input-checkbox" type="checkbox">
+                Tagalog
+            </label>
+            <label>
+                <input name="prefer" value="vietnamese" class="input-checkbox" type="checkbox">
+                Vietnamese
+            </label>
+            <label>
+                <input name="prefer" value="other" class="input-checkbox" type="checkbox">
+                Other
+            </label>
+        </div>
+        <div class="form-group">
+            <p>Please describe what language you speak with your child currently.</p>
+            <input type="text" class="input-text">
+        </div>
+        <div class="form-group">
+            <p>What is the highest level of education you have completed?</p>
+            <select name="school" id="dropdown" class="form-control" required>
+                <option disabled selected value>Select</option>
+                <option value="">did not attend school</option>
+                <option value="">some elementary school</option>
+                <option value="">graduated from elementary school</option>
+                <option value="">some high school</option>
+                <option value="">graduated from high school</option>
+                <option value="">some college</option>
+                <option value="">graduated from college</option>
+                <option value="">some graduate school</option>
+                <option value="">completed graduate school</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>What is your approximate average household income?</p>
+            <select name="income" id="dropdown" class="form-control" required>
+                <option disabled selected value>Select</option>
+                <option value="">0 - 24,999</option>
+                <option value="">25,000 - 49,999</option>
+                <option value="">50,000 - 74,999</option>
+                <option value="">75,000 - 99,999</option>
+                <option value="">100,000 - 124,999</option>
+                <option value="">125,000 - 149,999</option>
+                <option value="">150,000 - 174,999</option>
+                <option value="">175,000 - 199,999</option>
+                <option value="">200,000 and up</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Comments or Suggestions</p>
+            <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comments here"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+    </form>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
